@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="My Webpage">
+    <meta name="keywordss" content="Hello, World! website">
+    <meta name="author" content="Brian Musembi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <h1 align="center"><u>Are You Old Enough To Watch A Movie Alone?</u></h1>
+    <p><input id="number" type="text" placeholder="Enter In Your Age"></p>
+    <p><button onclick="myFunction()">Verify</button></p>
+    <script>
+      function myFunction(){
+      var number = document.getElementById("number").value;
+      let age= number;
+      if (age >= 17){
+        alert("You Can Watch An 'R' Rated Movie Alone.");
+      }else if (age >= 13){
+        alert("You Can Watch A 'PG-13' Movie Alone.");
+      }else if (age >= 5){
+        alert("You Can Watch A 'G' Or PG' Movie Alone.");
+      }else {
+        alert("You Are Too Young To Watch Most Things.");}
+      }
+    </script>
+    </body>
+</html>
